@@ -8,15 +8,15 @@ use Ramsey\Uuid\Uuid;
 
 class Id
 {
-    private string $id;
+    private string $value;
 
-    public function __construct()
+    public function __construct(string $value)
     {
-        $this->id = Uuid::uuid4();
+        $this->value = $value;
     }
 
     public function getId(): string
     {
-        return $this->id;
+        return $this->value;
     }
 }

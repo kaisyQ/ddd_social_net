@@ -15,9 +15,9 @@ class Post
     private Text $text;
     private Date $date;
     private LikeCount $likeCount;
-    public function __construct(Text $text, Date $date, LikeCount $likeCount)
+    public function __construct(Id $id, Text $text, Date $date, LikeCount $likeCount)
     {
-        $this->id = new Id();
+        $this->id = $id;
         $this->text = $text;
         $this->date = $date;
         $this->likeCount = $likeCount;

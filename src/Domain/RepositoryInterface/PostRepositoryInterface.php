@@ -11,5 +11,5 @@ interface PostRepositoryInterface
     /**
      * @return Post[]
      */
-    public function findAll (): array;
+    public function findAllPosts (): array;
 }

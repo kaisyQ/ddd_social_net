@@ -25,12 +25,13 @@ class User
      * @param Post[] $posts
      */
     public function __construct(
+        Id $id,
         Username $username,
         AbstractUserUniqueProperty $userUniqueProperty,
         Password $password,
         array $posts = []
     ) {
-        $this->id = new Id();
+        $this->id = $id;
         $this->username = $username;
         $this->userUniqueProperty = $userUniqueProperty;
         $this->password = $password;
